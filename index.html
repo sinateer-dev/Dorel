@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DORÉL — The Art of Luxury</title>
+<meta name="description" content="DORÉL — The Art of Luxury. Discover fashion, bags, shoes, watches, jewelry, fragrances and more.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+:root{--black:#0b0b0b;--cream:#f5f0e7;--gold:#c9a35b;--muted:#8e8a82;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--black);font-family:Montserrat,sans-serif}
+header{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(11,11,11,.94);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(201,163,91,.25)}
+.nav{max-width:1400px;margin:auto;height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 28px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:38px;letter-spacing:7px;color:var(--gold);text-decoration:none}
+nav{display:flex;gap:22px;align-items:center}nav a{color:#eee;text-decoration:none;font-size:11px;letter-spacing:1.7px;text-transform:uppercase;transition:.25s}nav a:hover{color:var(--gold)}
+.controls{display:flex;gap:8px}.select{background:#151515;color:#eee;border:1px solid #333;padding:9px 8px;font-size:11px}
+.hero{min-height:100vh;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.28)),url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2200&q=85") center/cover;display:flex;align-items:center;color:#fff;padding:130px 7% 70px}
+.hero-inner{max-width:720px}.eyebrow{letter-spacing:5px;font-size:12px;color:var(--gold);text-transform:uppercase}.hero h1{font-family:"Cormorant Garamond",serif;font-size:clamp(70px,11vw,150px);font-weight:500;letter-spacing:8px;margin:18px 0 4px}.hero p{font-family:"Cormorant Garamond",serif;font-size:30px;margin:0 0 32px;color:#eee}.btn{display:inline-block;border:1px solid var(--gold);padding:15px 28px;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:11px;transition:.3s}.btn:hover{background:var(--gold);color:#111}
+section{padding:100px 6%}.dark{background:var(--black);color:#fff}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:38px;gap:20px}.section-head h2{font-family:"Cormorant Garamond",serif;font-size:54px;font-weight:500;margin:0}.section-head p{color:var(--muted);max-width:520px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;position:relative;overflow:hidden}.product img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform .7s}.product:hover img{transform:scale(1.045)}.product-info{padding:18px}.product-name{font-family:"Cormorant Garamond",serif;font-size:24px}.meta{display:flex;justify-content:space-between;margin-top:8px;font-size:12px;color:#777}.featured{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.feature-card{min-height:570px;position:relative;overflow:hidden;background-size:cover;background-position:center}.feature-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent 55%)}.feature-text{position:absolute;z-index:1;left:32px;bottom:30px;color:#fff}.feature-text h3{font:500 44px "Cormorant Garamond",serif;margin:0 0 10px}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#222}.cat{min-height:170px;background:#111;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;text-decoration:none;font:500 30px "Cormorant Garamond",serif;transition:.3s}.cat:hover{color:var(--gold);background:#171717}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about img{width:100%;max-height:650px;object-fit:cover}.about h2{font:500 62px "Cormorant Garamond",serif;margin:0 0 20px}.about p{line-height:2;color:#555}
+.contact{max-width:760px;margin:auto}.form{display:grid;gap:16px}.form input,.form textarea{width:100%;padding:17px;border:1px solid #d6d0c4;background:#fff;font:14px Montserrat}.form textarea{min-height:170px;resize:vertical}.footer{background:#080808;color:#aaa;padding:45px 6%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer .logo{font-size:28px}
+.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@media(max-width:1000px){nav{display:none}.menu{display:block}.grid{grid-template-columns:repeat(2,1fr)}.featured,.about{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:90px}}
+@media(max-width:560px){.nav{height:68px;padding:0 16px}.logo{font-size:29px}.controls{display:none}.hero{padding:110px 22px 50px}.hero h1{font-size:62px;letter-spacing:5px}.hero p{font-size:24px}.section-head h2{font-size:43px}.grid{grid-template-columns:1fr 1fr;gap:10px}.product-info{padding:12px}.product-name{font-size:19px}.categories{grid-template-columns:1fr 1fr}.cat{min-height:125px;font-size:24px}section{padding:70px 20px}.feature-card{min-height:440px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="logo" href="#home">DORÉL</a>
+<button class="menu" onclick="toggleMenu()">☰</button>
+<nav id="nav">
+<a href="#collections">Collections</a><a href="#new">New Arrivals</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+<div class="controls"><select class="select"><option>USD $</option><option>EUR €</option><option>GBP £</option><option>DZD دج</option></select><select class="select"><option>EN</option><option>FR</option><option>AR</option></select></div>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="hero-inner reveal">
+<div class="eyebrow">The Art of Luxury</div><h1>DORÉL</h1><p>Timeless pieces. Refined taste.</p><a class="btn" href="#collections">Discover the Collection</a>
+</div></section>
+
+<section id="collections" class="dark reveal">
+<div class="section-head"><div><div class="eyebrow">Curated for you</div><h2>Featured Collection</h2></div><p>A refined selection of fashion and luxury pieces, presented with a timeless DORÉL aesthetic.</p></div>
+<div class="featured">
+<div class="feature-card" style="background-image:url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85')"><div class="feature-text"><h3>Maison Édition</h3><span>Explore the selection →</span></div></div>
+<div class="feature-card" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85')"><div class="feature-text"><h3>Essential Form</h3><span>Discover more →</span></div></div>
+</div>
+</section>
+
+<section id="new" class="reveal"><div class="section-head"><div><div class="eyebrow">Just arrived</div><h2>New Arrivals</h2></div><p>Newly curated pieces selected for the modern luxury wardrobe.</p></div>
+<div class="grid">
+<article class="product"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85"><div class="product-info"><div class="product-name">Signature Runner</div><div class="meta"><span>Footwear</span><b>$890</b></div></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=85"><div class="product-info"><div class="product-name">Élite Leather Bag</div><div class="meta"><span>Bags</span><b>$1,850</b></div></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844f49?auto=format&fit=crop&w=800&q=85"><div class="product-info"><div class="product-name">Noir Automatic</div><div class="meta"><span>Watches</span><b>$2,400</b></div></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=85"><div class="product-info"><div class="product-name">Lumière Gold</div><div class="meta"><span>Jewelry</span><b>$1,290</b></div></div></article>
+</div></section>
+
+<section id="categories" class="dark reveal"><div class="section-head"><div><div class="eyebrow">Explore</div><h2>Categories</h2></div></div>
+<div class="categories">
+<a class="cat" href="#">Clothing</a><a class="cat" href="#">Bags</a><a class="cat" href="#">Shoes</a><a class="cat" href="#">Watches</a><a class="cat" href="#">Jewelry</a><a class="cat" href="#">Fragrances</a><a class="cat" href="#">Other Products</a><a class="cat" href="#">All Collections</a>
+</div></section>
+
+<section id="about" class="reveal"><div class="about"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85"><div><div class="eyebrow">The Maison</div><h2>About DORÉL</h2><p>DORÉL is a curated destination for timeless fashion and luxury. Our vision is simple: bring together distinctive pieces, refined presentation and an effortless sense of elegance.</p><p>From clothing and bags to watches, jewelry and fragrances, every collection is presented with a focus on quality, style and enduring appeal.</p></div></div></section>
+
+<section id="contact" class="dark reveal"><div class="contact"><div class="section-head"><div><div class="eyebrow">Get in touch</div><h2>Contact DORÉL</h2></div></div>
+<form class="form" onsubmit="event.preventDefault(); alert('Thank you. Your message has been received.'); this.reset();">
+<input required placeholder="Your name"><input type="email" required placeholder="Email address"><input placeholder="Subject"><textarea required placeholder="Your message"></textarea><button class="btn" type="submit">Send Message</button>
+</form></div></section>
+</main>
+<footer class="footer"><div><div class="logo">DORÉL</div><div style="margin-top:10px">The Art of Luxury</div></div><div>© 2026 DORÉL. All rights reserved.</div></footer>
+<script>
+function toggleMenu(){const n=document.getElementById('nav'); n.style.display=n.style.display==='flex'?'none':'flex'; n.style.position='absolute';n.style.top='68px';n.style.left='0';n.style.right='0';n.style.padding='20px';n.style.background='#0b0b0b';n.style.flexDirection='column';}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
